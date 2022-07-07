@@ -1,0 +1,424 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $.getJSON("http://webservicedhaniwahyu.rf.gd/katalogku.php"), function (result) {
+            $.each(result.data, function (i) {
+                document.getElementById("rowProduk").innerHTML +=
+                    "<tr><td>" + result.data[i].id +
+                    "</td><td>" + result.data[i].nama +
+                    "</td><td>" + result.data[i].kategori +
+                    "</td><td>" + result.data[i].deskripsi +
+                    "</td><td>" + result.data[i].harga +
+                    "</td><td>" + result.data[i].berat +
+                    "</td><td>" + result.data[i].gambar +
+                    "</td><td>" + result.data[i].stok +
+                    "</td><td>" + result.data[i].produk0ukuran +
+                    "</td><td>" + result.data[i].produk0warna +
+                    "</td><td>" + result.data[i].produk0bahan +
+                    "</td><td>" + result.data[i].produk0tipe +
+                    "</td></tr>";
+
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <h2>KATALOGKU 2022</h2>
+    <div id="data">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</td>
+                    <th>Kategori</th>
+                    <th>Nama</th>
+                    <th>Deskripsi</th>
+                    <th>Harga</th>
+                    <th>Berat</th>
+                    <th>Gambar</th>
+                    <th>Stok</th>
+                    <th>Ukuran</th>
+                    <th>Warna</th>
+                    <th>Bahan</th>
+                    <th>Tipe</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+
+
+            <thead>
+                <tr>
+                    <th>1</td>
+                    <th>laptop</th>
+                    <th>ASUS TUF Gaming FX505</th>
+                    <th>Laptop ini dibekali dengan spesifikasi terbaik yang dapat menunjang performa tinggi tanpa kendala sama sekali.</th>
+                    <th>15.900.000</th>
+                    <th>2.3 kg</th>
+                    <th>1.jpg</th>
+                    <th>1</th>
+                    <th>15.6 inch</th>
+                    <th>black</th>
+                    <th>Alumunium</th>
+                    <th>Gaming</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+                <tr>
+                    <th>2</td>
+                    <th>laptop</th>
+                    <th>Acer Chromebook 514</th>
+                    <th>Bodi laptop premium ini masih mempertahankan material aluminium sebagai pelapis bodi utama</th>
+                    <th>3.800.000</th>
+                    <th>1.3kg</th>
+                    <th>2.jpg</th>
+                    <th>10</th>
+                    <th>14 inch</th>
+                    <th>white</th>
+                    <th>Alumunium</th>
+                    <th>notebook</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+                <tr>
+                    <th>2</td>
+                    <th>laptop</th>
+                    <th>Toshiba Portege X20W</th>
+                    <th>Toshiba Portege X20W hadir dengan prosesor Intel Core i7-7500U untuk mendukung performa tinggi agar tetap stabil.</th>
+                    <th>7.000.000</th>
+                    <th>1.1 kg</th>
+                    <th>3.jpg</th>
+                    <th>9</th>
+                    <th>299 x 219 x 15.4mm</th>
+                    <th>white,black</th>
+                    <th>Alumunium</th>
+                    <th>notebook</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+                <tr>
+                    <th>4</td>
+                    <th>laptop</th>
+                    <th>Xiaomi Mi Notebook Air</th>
+                    <th>Merk laptop terbaik asal pabrikan Cina ini hadir dalam dua pilihan, yaitu layar 12,5 inci dan layar 13,3 inci.</th>
+                    <th>5.590.00</th>
+                    <th>5.7 kg</th>
+                    <th>4.jpg</th>
+                    <th>5</th>
+                    <th>13.3 inch</th>
+                    <th>white</th>
+                    <th>besi dan perbaduan warna futuristik</th>
+                    <th>notebook</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+                <tr>
+                    <th>5</td>
+                    <th>laptop</th>
+                    <th>Lenovo Ideapad Gaming 3 N1ID</th>
+                    <th>Body perangkat ini terlihat polos di bagian belakang, namun dengan kontur body yang sedikit terlihat polygonal di beberapa sudut. Pada bagian pinggi body terdapat logo Lenovo yang diukir pada lempengan logam, menjadi ciri khas laptop Lenovo seri ideapad.</th>
+                    <th>12.300.000</th>
+                    <th> 2.08 kg</th>
+                    <th>5.jpg</th>
+                    <th>4</th>
+                    <th>panjang 35,9 cm, Lebar 24,9 cm, dan tebal 2,49 cm</th>
+                    <th>Onyx Black</th>
+                    <th>plastik</th>
+                    <th>gaming</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+                <tr>
+                    <th>6</td>
+                    <th>laptop</th>
+                    <th>Acer Nitro 5 Gaming</th>
+                    <th>Acer Nitro 5 adalah laptop dengan layar 15.6 dan resolusi 1920 x 1080pixels yang dilengkapi spesifikasi mumpuni. Laptop dengan berat 2.48kg ini ditenagai kartu grafis NVIDIA\u00ae GeForce RTX\u2122 3060 dan didukung sistem operasi Windows 10 Home.</th>
+                    <th>11.775.489</th>
+                    <th> 2,17  kg</th>
+                    <th>6.jpg</th>
+                    <th>2</th>
+                    <th>panjang 36,3 cm, lebar 25,4cm, dan tebal 2,3 cm</th>
+                    <th>Black</th>
+                    <th>plastik</th>
+                    <th>gaming</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+                <tr>
+                    <th>7</td>
+                    <th>laptop</th>
+                    <th>Macbook Apple 2018"</th>
+                    <th> MacBook Pro 2018 varian 13 inch dirilis dengan menghadirkan prosesor Intel Quad-Core generasi ke-8 yang punya performa 2x lebih tinggi dibandingkan generasi sebelumnya.</th>
+                    <th>15.880.000</th>
+                    <th>  1.37kg</th>
+                    <th>7.jpg</th>
+                    <th>5</th>
+                    <th>13.3 inch</th>
+                    <th>silver</th>
+                    <th>alumunium</th>
+                    <th>mackbook</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+                <tr>
+                    <th>8</td>
+                    <th>laptop</th>
+                    <th>Lenovo IdeaPad Slim 3</th>
+                    <th> Lenovo IdeaPad Slim 3 hadir dengan dukungan prosesor AMD Ryzen 5 4500U dengan Radeon Graphics 2,38 GHz, serta RAM 8GB dan ruang penyimpanan internal SSD berkapasitas 512GB.</th>
+                    <th>10.799.000</th>
+                    <th> 1.6 kg</th>
+                    <th>8.jpg</th>
+                    <th>10</th>
+                    <th>14  inch</th>
+                    <th>Platinum Grey, Abyss Blue, Cherry Red, Almond, Business Black</th>
+                    <th>alumunium</th>
+                    <th>mackbook</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+                <tr>
+                    <th>9</td>
+                    <th>laptop</th>
+                    <th>ASUS VivoBook 14 A412FA</th>
+                    <th>  Laptop ASUS VivoBook 14 A412FA adalah ultrabookdengan bobot 1.5kg dan layar 14 inch beresolusi 1920 x 1080pixels.</th>
+                    <th>12.920.000</th>
+                    <th>1.5 kg</th>
+                    <th>9.jpg</th>
+                    <th>10</th>
+                    <th>14  inch</th>
+                    <th>Platinum Grey, Abyss Blue, Cherry Red, Almond, Business Black</th>
+                    <th>alumunium</th>
+                    <th>notebok</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+                <tr>
+                    <th>10</td>
+                    <th>laptop</th>
+                    <th>Huawei Matebook 14s</th>
+                    <th> Laptop ASUS VivoBook 14 A412FA adalah ultrabookdengan bobot 1.5kg dan layar 14 inch beresolusi 1920 x 1080pixels.</th>
+                    <th>15.999.000</th>
+                    <th>1.43 kg</th>
+                    <th>10.jpg</th>
+                    <th>10</th>
+                    <th>14.2 inch</th>
+                    <th>white</th>
+                    <th>alumunium</th>
+                    <th>notebok</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			<thead>
+			    <tr>
+                    <th>11</td>
+                    <th>earphone</th>
+                    <th>Fantech SCAR EG2</th>
+                    <th>Fantech SCAR EG2 merupakan headset gaming yang dilengkapi dengan mikrofon ganda yang fleksibel, mic bisa dipasang dan dilepas sesuai keperluan.</th>
+                    <th>130.000</th>
+                    <th> 300 g</th>
+                    <th>11.jpg</th>
+                    <th>10</th>
+                    <th>15 mm</th>
+                    <th>white,black</th>
+                    <th>alumunium</th>
+                    <th>earphone</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+			 <tr>
+                    <th>12</td>
+                    <th>earphone</th>
+                    <th>KZ ZS10</th>
+                    <th>Earphone besutan Knowledge Zenith inimempunyai frekuensi 7Hz-40000Hz, impendasi 32 ohms, dan sensitivitas 104 DB yang performanya memukau dan bassnya sangat terdengar rapi. Selain itu, KZ ZS10 memiliki kabel over-the-ear berbentuk anyaman dan transparan yang bisa dicopot dan dipasan. </th>
+                    <th>389.000</th>
+                    <th> 250 g</th>
+                    <th>12.jpg</th>
+                    <th>3</th>
+                    <th>1.2m\u00b13cm</th>
+                    <th>blue,purple</th>
+                    <th>alumunium</th>
+                    <th>wireles</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+			 <tr>
+                    <th>13</td>
+                    <th>earphone</th>
+                    <th>Pioneer Extra Bass SE-QL2T</th>
+                    <th> Headset In Ear Monitor (IEM) ini berbahan dasar aluminium yang mampu menahan getaran yang mengganggu kualitas suara dibandingkan plastik. Desain yang dimiliki juga cukup elegan. Dengan konsep kepala earbud yang miring beberapa derajat, headset ini nyaman saat dipakai. </th>
+                    <th>299.000</th>
+                    <th> 200 g</th>
+                    <th>13.jpg</th>
+                    <th>5</th>
+                    <th>15 mm</th>
+                    <th>red,black</th>
+                    <th>alumunium</th>
+                    <th>earphone</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+			 <tr>
+                    <th>14</td>
+                    <th>earphone</th>
+                    <th>Sony MDR-XB55AP</th>
+                    <th>Kualitas semakin memukau dengan Powered Bass Duct++ yang memberikan bass yang bertenaga dan enak didengar. Dengan lima pilihan warna yang menarik, kamu bisa memilih warna earphone favoritmu untuk tampil gaya dengan earphone berkualitas.</th>
+                    <th>399.000</th>
+                    <th>300 g</th>
+                    <th>14.jpg</th>
+                    <th>6</th>
+                    <th>12 mm</th>
+                    <th>red</th>
+                    <th>alumunium</th>
+                    <th>earphone</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			
+			<thead>
+			 <tr>
+                    <th>15</td>
+                    <th>earphone</th>
+                    <th>Sennheiser CX 1.00</th>
+                    <th>Sennheiser CX 1.00 memiliki keunggulan suara yang jernih di hampir seluruh rentang frekuensi 17 to 20,000 Hz saat mendengarkan lagu.</th>
+                    <th>571.000</th>
+                    <th>500 g</th>
+                    <th>15.jpg</th>
+                    <th>6</th>
+                    <th>12 mm</th>
+                    <th>black</th>
+                    <th>alumunium</th>
+                    <th>earphone</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+			 <tr>
+                    <th>16</td>
+                    <th>earphone</th>
+                    <th>PHILIPS SHE3015 </th>
+                    <th>PHILIPS SHE3015 merupakan salah satu pilihan product earphone terbaik keluaran Philips. Disempurnakan dengan bass yang kuat serta ear ban lembut yang nyaman, tipe headset populer ini juga memiliki desain yang trendy.</th>
+                    <th>200.000</th>
+                    <th>125 g</th>
+                    <th>16.jpg</th>
+                    <th>6</th>
+                    <th>12 mm</th>
+                    <th>black</th>
+                    <th>neodymium</th>
+                    <th>earphone</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+			<tr>
+                    <th>17</td>
+                    <th>earphone</th>
+                    <th>Hoco M55 Earphone </th>
+                    <th>Hoco M55 Earphone adalah headset inear yang hadir dalam berbagai pilihan warna. Kamu akan dimanjakan dengan suara berkualitas tinggi untuk menemani kamu beraktivitas.</th>
+                    <th>129.472</th>
+                    <th>125 g</th>
+                    <th>17.jpg</th>
+                    <th>6</th>
+                    <th>15 mm</th>
+                    <th>white</th>
+                    <th>plastik</th>
+                    <th>earphone</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+			<tr>
+                    <th>18</td>
+                    <th>earphone</th>
+                    <th>Apple AirPods</th>
+                    <th>Apple AirPods adalah headset Bluetooth yang dapat digunakan selama 3h waktu bicara dan 5h waktu beroperasi.</th>
+                    <th>1.323.000</th>
+                    <th>4 g</th>
+                    <th>18.jpg</th>
+                    <th>6</th>
+                    <th>15 mm</th>
+                    <th>white</th>
+                    <th>plastik</th>
+                    <th>earphone</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+			<tr>
+                    <th>19</td>
+                    <th>earphone</th>
+                    <th>JBL Everest 110</th>
+                    <th>JBL Everest 110 adalah headset in ear yang hadir dalam berbagai pilihan warna. Kamu akan dimanjakan dengan suara berkualitas tinggi untuk menemani kamu beraktivitas.</th>
+                    <th>720.000</th>
+                    <th>15 g</th>
+                    <th>19.jpg</th>
+                    <th>6</th>
+                    <th>15 mm</th>
+                    <th>white</th>
+                    <th>plastik</th>
+                    <th>earphone</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+			<thead>
+			<tr>
+                    <th>20</td>
+                    <th>earphone</th>
+                    <th>Remax RM 303</th>
+                    <th>Remax RM 303 adalah headset in ear yang hadir dalam berbagai pilihan warna. Kamu akan dimanjakan dengan suara berkualitastinggi untuk menemani kamu beraktivitas.</th>
+                    <th>78.000</th>
+                    <th>15 g</th>
+                    <th>20.jpg</th>
+                    <th>6</th>
+                    <th>15 mm</th>
+                    <th>black</th>
+                    <th>plastik</th>
+                    <th>earphone</th>
+                </tr>
+            </thead>
+            <tbody id="rowProduk">
+			
+		
+			
+			
+			
+			
+			
+
+            </tbody>
+        </table>
+    </div>
+<style>.footer,.generic-footer{margin-bottom:98px}@media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}@media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}@media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}.disclaimer{position:fixed;z-index:9999999;bottom:0;right:0;border-top:2px solid #ff5c62;text-align:center;font-size:14px;font-weight:400;background-color:#fff;padding:5px 10px 5px 10px}.disclaimer a:hover{text-decoration:underline}@media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}@media (min-width:1920px){.disclaimer{width:60%}}</style><div class="disclaimer">We support Ukraine and condemn war. Push Russian government to act against war. Be brave, vocal and show your support to Ukraine. Follow the latest news <a title="https://www.bbc.com/news/live/world-europe-60517447" target="_blank" href="https://www.bbc.com/news/live/world-europe-60517447" style="color: black;"><b>HERE</b></a></div></body>
+
+</html>
